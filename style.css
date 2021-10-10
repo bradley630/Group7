@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(codmobile.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 70%;
+    padding: 40px;
+    margin: 100px auto;
+}
+a, p, h2, h3, h4, b {
+    color: yellow;
+}
+b{
+    padding-left: 13%;
+    font-size: 20px;
+}
+
+h2, h3{
+    padding-bottom: 10px;
+}
+header {
+    margin-top: 5px;
+    background-color: black;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+header nav a{
+    padding: 5px 10px 10px;
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .4s;
+}
+header nav a:hover{
+    background: red;
+    border-radius: 2px;
+}
+section {
+    padding: 20px;
+}
+aside ul{
+    padding-left: 10px;
+}
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+footer a{
+    color: yellow;
+    padding: 0px 10px 0px 10px;
+
+}
+footer p{
+    color: yellow;
+    padding-bottom: 5%;
+}
+footer a:hover {
+    color:white;
+}
+
+aside{
+    float: none;
+    width: 100%;
+    padding: 20px;
+}
+main video {
+    position: relative;
+    width: 100%;
+    
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    color: #fff;
+    max-width: 400px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.logo i{
+    font-size: 50px;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+ .contact-form .text-box{
+     background: #000;
+     color: #fff;
+     border: none;
+     width: calc(50% - 10px);
+     height: 50px;
+     padding: 12px;
+     font-size: 15px;
+     border-radius: 5px;
+     box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     opacity: 0.9;
+ }
+ .contact-form .text-box:first-child{
+     margin-right: 15px;
+ }
+
+ .contact-form textarea{
+     background: #000;
+     color: #fff;
+     border: none;
+     width: 100%;
+     padding: 12px;
+     font-size: 15px;
+     min-height: 200px;
+     max-height: 400px;
+     resize: vertical;
+     border-radius: 5px;
+     box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+     margin-bottom: 20px;
+     opacity: 0.9;
+ }
+ .contact-form .send-btn{
+     float: right;
+     background: #2E94E3;
+     color: #fff;
+     border: none;
+     width: 120px;
+     height: 40px;
+     font-size: 15px;
+     font-weight: 600;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+     transition-property: background;
+ }
+ .contact-form .send-btn:hover{
+background: #0582E3;
+ }
+ .iframe-container{
+     position: relative;
+ }
+ .iframe-container iframe{
+     left: 0px;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     height: 100%;
+     width: 100%;
+
+ }
+
+@media screen and (max-width: 950px) {
+    .contact-section{
+        flex-direction: column;
+    }
+    main{
+        float: none;
+        width: 100%;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+        font-size: 15px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
